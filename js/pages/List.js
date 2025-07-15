@@ -97,6 +97,7 @@ export default {
                     </p>
                     <p>
                         Records will state perfects vs imperfect proof. Imperfect proof means self-admittedly I could have cheated I guess. Lmao.
+						Perfect Proof requires all footage for a hardcore run, and all bosses and most footage for a softcore one.
                     </p>
                 </div>
             </div>
