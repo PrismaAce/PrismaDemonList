@@ -1,24 +1,17 @@
 {
+	"name": "Death Master Hardcore",
     "date": 57436521,
-    "name": "Sample Level 3",
-    "author": "Different Publisher",
-    "creators": ["Solo_Creator"],
-    "verifier": "Solo_Creator",
+    "author": "PrismaAce",
+    "creators": ["Calamity Mod"],
+    "verifier": "PrismaAce",
     "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
-    "percentToQualify": "100",
     "rules": "46290",
     "records": [
         {
-            "user": "Sample_Victor_1",
-            "link": "https://www.youtube.com/watch?v=MgJeijBGKHU",
+            "user": "PrismaAce",
+            "link": "https://www.youtube.com/playlist?list=PLf0J6LuMSn7fr3PEYRNshJ0YejAvuCGi8",
             "percent": 100,
-            "proofquality": 360
-        },
-        {
-            "user": "Sample_Victor_2",
-            "link": "https://www.youtube.com/watch?v=MgJeijBGKHU",
-            "percent": 100,
-            "proofquality": 120
+            "proofquality": "Imperfect"
         }
     ]
 }
