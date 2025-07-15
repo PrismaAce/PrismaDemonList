@@ -59,7 +59,6 @@ export default {
                             <div class="meta">
                                 <p>#{{ currentLevel.rank }}</p>
                                 <h2>{{ currentLevel.name }}</h2>
-                                <p>{{ currentLevel.id }}</p>
                             </div>
                             <form class="actions" v-if="!givenUp">
                                 <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
@@ -181,7 +180,6 @@ export default {
 
             const fullListMapped = fullList.map(([lvl, _], i) => ({
                 rank: i + 1,
-                id: lvl.id,
                 name: lvl.name,
                 video: lvl.verification,
             }));

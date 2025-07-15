@@ -43,22 +43,15 @@ export default {
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points when completed</div>
-                            <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
+                            <div class="type-title-sm">Date of Completion</div>
+                            <p>{{ level.date }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">ID</div>
-                            <p>{{ level.id }}</p>
-                        </li>
-                        <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
+                            <div class="type-title-sm">Rules</div>
+                            <p>{{ level.rules || 'Self-Explanatory' }}</p>
                         </li>
                     </ul>
                     <h2>Records</h2>
-                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
-                    <p v-else>This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
@@ -70,8 +63,8 @@ export default {
                             <td class="mobile">
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
-                            <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
+                            <td class="proofquality">
+                                <p>{{ record.proofquality }}</p>
                             </td>
                         </tr>
                     </table>
@@ -98,30 +91,12 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>About</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        This list has my personal rankings, and are not objective by any means.
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
-                    </p>
-                    <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
-                    </p>
-                    <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
-                    </p>
-                    <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
-                    </p>
-                    <p>
-                        Do not use secret routes or bug routes
-                    </p>
-                    <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
-                    </p>
-                    <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Records will state perfects vs imperfect proof. Imperfect proof means self-admittedly I could have cheated I guess. Lmao.
                     </p>
                 </div>
             </div>
