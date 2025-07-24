@@ -50,6 +50,11 @@ export default {
                             <div class="type-title-sm">Rules</div>
                             <p>{{ level.rules || 'Self-Explanatory' }}</p>
                         </li>
+                        <li>
+                            <div class="type-title-sm">Loadouts</div>
+                            <p>{{ level.loadoutslink || 'Self-Explanatory' }}</p>
+							<a :href="level.loadoutslink" target="_blank" class="type-label-lg">{{ 'Link' || 'No Link' }}</a>
+                        </li>
                     </ul>
                     <h2>Records</h2>
                     <table class="records">
