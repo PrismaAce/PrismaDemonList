@@ -52,7 +52,15 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">Loadouts</div>
-							<a :href="level.loadoutslink" target="_blank" class="type-label-lg">{{ 'Link' || 'No Link' }}</a>
+							<a
+							  v-if="level.loadoutslink"
+							  :href="level.loadoutslink"
+							  target="_blank"
+							  class="type-label-lg"
+							>
+							  Link
+							</a>
+							<span v-else class="type-label-lg">No Link</span>
                         </li>
                     </ul>
                     <h2>Records</h2>
