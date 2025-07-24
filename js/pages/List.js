@@ -56,7 +56,7 @@ export default {
 							  v-if="level.loadoutslink"
 							  :href="level.loadoutslink"
 							  target="_blank"
-							  class="type-label-lg"
+							  class="type-label-lg link"
 							>
 							  Link
 							</a>
