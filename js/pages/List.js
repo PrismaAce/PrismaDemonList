@@ -52,7 +52,6 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">Loadouts</div>
-                            <p>{{ level.loadoutslink || 'Self-Explanatory' }}</p>
 							<a :href="level.loadoutslink" target="_blank" class="type-label-lg">{{ 'Link' || 'No Link' }}</a>
                         </li>
                     </ul>
