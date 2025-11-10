@@ -3,5 +3,4 @@ import Roulette from './pages/Roulette.js';
 
 export default [
     { path: '/', component: List },
-    { path: '/roulette', component: Roulette },
 ];
